@@ -130,6 +130,7 @@ header img {
     .social-links {
         flex-direction: column; /* Stack buttons on smaller screens */
         margin: 15px 0;
+        padding: 0 20px;
         max-width: 90%;
     }
 }
