@@ -61,11 +61,11 @@ header img {
     justify-content: center;
     gap: 20px; /* Equal spacing between buttons */
     flex-wrap: wrap; /* Ensures responsiveness */
-    margin: 20px 0; /* ✅ Added spacing before and after buttons */
+    margin: 20px 0;
 }
 
 /* Button Styling */
-.download-btn, .social-btn {
+.social-btn {
     display: inline-block;
     padding: 10px 20px;
     text-decoration: none;
@@ -104,20 +104,6 @@ header img {
     padding: 20px;
 }
 
-/* Contact Form - Make Height Responsive */
-.contact-container {
-    display: flex;
-    justify-content: center;
-    margin-top: 40px;
-}
-
-.contact-container iframe {
-    width: 80%;
-    min-height: 500px;
-    max-height: 80vh; /* Adaptive height */
-    border: none;
-}
-
 /* Responsive Fixes */
 @media screen and (max-width: 768px) {
     header {
@@ -136,11 +122,6 @@ header img {
 
     .social-links {
         flex-direction: column; /* Stack buttons on smaller screens */
-        margin: 15px 0; /* ✅ Adjusted spacing for mobile */
-    }
-
-    .contact-container iframe {
-        width: 90%; /* Make form width more mobile-friendly */
-        min-height: 600px;
+        margin: 15px 0;
     }
 }
