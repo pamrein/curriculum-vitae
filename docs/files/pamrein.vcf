@@ -1,0 +1,13 @@
+BEGIN:VCARD
+VERSION:3.0
+FN:Pascal AMREIN
+N:AMREIN;Pascal;;;
+item1.EMAIL;TYPE=INTERNET:amreinpascal@protonmail.com
+item1.X-ABLabel:Privat
+item2.URL:https\://pamrein.github.io/curriculum-vitae/
+item2.X-ABLabel:_$!<HomePage>!$_
+NOTE:Swiss Cyber Security Days (SCSD)
+PHOTO:https://lh3.googleusercontent.com/contacts/AG6tpzGdvZTnNRGBMwr51Yluoa
+ Ls5Y_srDLnC9p74V69PyrWHpiz5k5D
+CATEGORIES:myContacts
+END:VCARD
