@@ -1,9 +1,103 @@
+/* General Styles */
 body {
+    margin: 0;
     font-family: Arial, sans-serif;
-    transition: background 0.3s, color 0.3s;
+    background-color: black;
+    color: white;
+    text-align: center;
 }
 
-.dark-mode {
-    background: #121212;
-    color: #ffffff;
+/* Header */
+header {
+    position: relative;
+    text-align: center;
+}
+
+header img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Quote Formatting */
+.quote {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 20px;
+    border-radius: 10px;
+    width: 80%;
+}
+
+.quote span {
+    display: block;
+    font-size: 18px;
+    font-weight: normal;
+    margin-top: 5px;
+}
+
+/* CV Section */
+#cv {
+    margin: 40px auto;
+    max-width: 600px;
+}
+
+.download-btn {
+    display: inline-block;
+    background-color: white;
+    color: black;
+    padding: 10px 20px;
+    text-decoration: none;
+    margin: 10px 0;
+    font-weight: bold;
+}
+
+.social-links a {
+    display: inline-block;
+    color: white;
+    margin: 10px;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.social-links a:hover {
+    text-decoration: underline;
+}
+
+/* Contact Form */
+#contact {
+    margin: 40px auto;
+    max-width: 400px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+input, textarea {
+    padding: 10px;
+    margin: 5px 0;
+    border: none;
+    border-radius: 5px;
+    background: #222;
+    color: white;
+}
+
+button {
+    background: white;
+    color: black;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background: gray;
 }
