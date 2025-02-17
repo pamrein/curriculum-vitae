@@ -10,33 +10,32 @@ body {
 /* Header */
 header {
     position: relative;
-    text-align: center;
-    width: 640px; /* Set width */
+    width: 80%; /* Takes 80% of the full width */
     margin: auto;
 }
 
 header img {
-    width: 100%; /* Full width of the container */
-    height: auto; /* Auto-scale height */
+    width: 100%;
+    height: auto;
     display: block;
 }
 
-/* Transparent Overlay for Quote & Buttons */
+/* Transparent Overlay */
 .overlay {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.4); /* More transparent */
+    background-color: rgba(0, 0, 0, 0.4); /* Lightly transparent black */
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 20px; /* Space between quote and buttons */
+    padding: 20px;
 }
 
-/* Quote Formatting */
+/* Quote Styling */
 .quote {
     color: white;
     font-size: 22px;
@@ -46,6 +45,7 @@ header img {
     background: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
     padding: 10px;
     border-radius: 5px;
+    margin-bottom: 20px; /* Space before buttons */
 }
 
 .quote span {
@@ -55,15 +55,14 @@ header img {
     margin-top: 5px;
 }
 
-/* Social Links & Download Button (Next to Each Other) */
+/* Buttons (Download CV, LinkedIn, GitHub) */
 .social-links {
-    display: flex; /* Arrange items in a row */
-    justify-content: center; /* Center items horizontally */
+    display: flex;
+    justify-content: center;
     gap: 20px; /* Equal spacing between buttons */
-    margin-top: 20px;
 }
 
-/* Buttons Styling */
+/* Button Styling */
 .download-btn, .social-btn {
     display: inline-block;
     padding: 10px 20px;
@@ -91,7 +90,7 @@ header img {
     color: white;
 }
 
-/* Hover Effect */
+/* Hover Effects */
 .download-btn:hover, .social-btn:hover {
     opacity: 0.8;
 }
