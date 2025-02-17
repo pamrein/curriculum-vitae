@@ -121,7 +121,7 @@ header img {
 /* Responsive Fixes */
 @media screen and (max-width: 768px) {
     header {
-        max-width: 100%; /* Full width on mobile */
+        max-width: 200%; /* Full width on mobile */
     }
 
     .overlay {
@@ -129,7 +129,7 @@ header img {
     }
 
     .quote {
-        font-size: 18px;
+        font-size: 12px;
         width: 90%;
         padding: 8px;
     }
