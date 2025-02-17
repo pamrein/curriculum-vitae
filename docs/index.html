@@ -31,22 +31,20 @@
     </section>
 
     <!-- Contact Section -->
-    <section id="contact">
-        <h2>Contact Me</h2>
-        <form id="contact-form">
-            <label for="name">Name:</label>
-            <input type="text" id="name" required>
 
-            <label for="email">Email:</label>
-            <input type="email" id="email" required>
 
-            <label for="message">Message:</label>
-            <textarea id="message" required></textarea>
-
-            <button type="submit">Send Message</button>
-        </form>
-        <p id="form-message"></p>
-    </section>
+    <form action="https://forms.gle/ypuMpiZwVMqHZCcq9" method="POST" target="_blank">
+        <label for="name">Name:</label>
+        <input type="text" name="entry.YOUR_NAME_ID" required>
+    
+        <label for="email">Email:</label>
+        <input type="email" name="entry.YOUR_EMAIL_ID" required>
+    
+        <label for="message">Message:</label>
+        <textarea name="entry.YOUR_MESSAGE_ID" required></textarea>
+    
+        <button type="submit">Send Message</button>
+    </form>
 
     <script src="script.js"></script>
 </body>
