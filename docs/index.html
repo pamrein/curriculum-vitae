@@ -7,20 +7,43 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
+    <!-- Header Section -->
     <header>
-        <h1>John Doe</h1>
-        <button onclick="toggleTheme()">Toggle Theme</button>
+        <img src="images/header.jpg" alt="Header Image">
+        <h1>Creativity is intelligence having fun. - Albert Einstein</h1>
     </header>
-    
-    <section>
+
+    <!-- CV Section -->
+    <section id="cv">
         <h2>About Me</h2>
-        <p>I am a software engineer specializing in web development.</p>
+        <p>Hello! I'm [Your Name], a passionate [Your Profession]. Here’s my CV:</p>
+        <a href="../curriculum-vitae-amrein.pdf" download class="download-btn">Download My CV</a>
+
+        <h3>Connect with me:</h3>
+        <div class="social-links">
+            <a href="https://www.linkedin.com/in/pamrein" target="_blank">LinkedIn</a>
+            <a href="https://github.com/pamrein" target="_blank">GitHub</a>
+        </div>
     </section>
 
-    <footer>
-        <p>&copy; <span id="year"></span> John Doe</p>
-        <button onclick="downloadCV()">Download CV</button>
-    </footer>
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <form id="contact-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" required></textarea>
+
+            <button type="submit">Send Message</button>
+        </form>
+        <p id="form-message"></p>
+    </section>
 
     <script src="script.js"></script>
 </body>
