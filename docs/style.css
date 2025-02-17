@@ -11,28 +11,41 @@ body {
 header {
     position: relative;
     text-align: center;
+    width: 640px; /* Set width */
+    margin: auto;
 }
 
 header img {
-    width: 100%;
-    height: auto;
+    width: 100%; /* Full width of the container */
+    height: auto; /* Auto-scale height */
     display: block;
+}
+
+/* Transparent Overlay for Quote & Buttons */
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4); /* More transparent */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px; /* Space between quote and buttons */
 }
 
 /* Quote Formatting */
 .quote {
-    position: absolute;
-    top: 20%;
-    left: 50%;
-    transform: translate(-50%, -50%);
     color: white;
-    font-size: 24px;
+    font-size: 22px;
     font-weight: bold;
     text-align: center;
-    background-color: rgba(0, 0, 0, 0.6);
-    padding: 20px;
-    border-radius: 10px;
     width: 80%;
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    padding: 10px;
+    border-radius: 5px;
 }
 
 .quote span {
@@ -42,62 +55,49 @@ header img {
     margin-top: 5px;
 }
 
+/* Social Links & Download Button (Next to Each Other) */
+.social-links {
+    display: flex; /* Arrange items in a row */
+    justify-content: center; /* Center items horizontally */
+    gap: 20px; /* Equal spacing between buttons */
+    margin-top: 20px;
+}
+
+/* Buttons Styling */
+.download-btn, .social-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    text-align: center;
+    white-space: nowrap;
+    transition: 0.3s;
+}
+
+/* Different Button Colors */
+.download-btn {
+    background: white;
+    color: black;
+}
+
+.linkedin {
+    background: #0077b5;
+    color: white;
+}
+
+.github {
+    background: #333;
+    color: white;
+}
+
+/* Hover Effect */
+.download-btn:hover, .social-btn:hover {
+    opacity: 0.8;
+}
+
 /* CV Section */
 #cv {
     margin: 40px auto;
     max-width: 600px;
-}
-
-.download-btn {
-    display: inline-block;
-    background-color: white;
-    color: black;
-    padding: 10px 20px;
-    text-decoration: none;
-    margin: 10px 0;
-    font-weight: bold;
-}
-
-.social-links a {
-    display: inline-block;
-    color: white;
-    margin: 10px;
-    text-decoration: none;
-    font-size: 18px;
-}
-
-.social-links a:hover {
-    text-decoration: underline;
-}
-
-/* Contact Form */
-#contact {
-    margin: 40px auto;
-    max-width: 400px;
-}
-
-form {
-    display: flex;
-    flex-direction: column;
-}
-
-input, textarea {
-    padding: 10px;
-    margin: 5px 0;
-    border: none;
-    border-radius: 5px;
-    background: #222;
-    color: white;
-}
-
-button {
-    background: white;
-    color: black;
-    padding: 10px;
-    border: none;
-    cursor: pointer;
-}
-
-button:hover {
-    background: gray;
 }
