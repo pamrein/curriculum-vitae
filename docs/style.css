@@ -99,38 +99,9 @@ header img {
 
 /* CV Section */
 #cv {
-    margin: 40px auto;
+    margin: 20px auto;
     max-width: 600px;
     padding: 20px;
 }
 
-/* Responsive Fixes */
-@media screen and (max-width: 768px) {
-    header {
-        max-width: 200%; /* Full width on mobile */
-    }
 
-    .overlay {
-        padding: 5px;
-    }
-
-    .quote {
-        font-size: 16px;
-        width: 90%;
-        padding: 8px;
-    }
-
-    .quote span {
-        display: block;
-        font-size: 12px;
-        font-weight: normal;
-        margin-top: 5px;
-    }
-
-    .social-links {
-        flex-direction: column; /* Stack buttons on smaller screens */
-        margin: 15px 0;
-        padding: 0 20px;
-        max-width: 90%;
-    }
-}
