@@ -14,7 +14,7 @@ body {
 /* Header */
 header {
     position: relative;
-    max-height: 250px; /* Takes 80% of the viewport width */
+    max-height: 250px;
     margin: auto;
     overflow: hidden;
 }
@@ -99,6 +99,16 @@ header img {
 /* Hover Effects */
 .download-btn:hover, .social-btn:hover {
     opacity: 0.8;
+}
+
+.qr-code {
+    text-align: center; /* Center the QR code */
+    margin: 20px 0; /* Space above and below the image */
+}
+
+.qr-code img {
+    max-width: 200px; /* Adjust size as needed */
+    height: auto;
 }
 
 /* CV Section */
