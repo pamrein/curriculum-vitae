@@ -10,8 +10,9 @@ body {
 /* Header */
 header {
     position: relative;
-    width: 100%; 
+    max-width: 80vw; /* Takes 80% of the viewport width */
     margin: auto;
+    overflow: hidden;
 }
 
 header img {
@@ -27,7 +28,7 @@ header img {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.4); /* Lightly transparent black */
+    background-color: rgba(0, 0, 0, 0.3); /* Lightly transparent black */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -60,6 +61,7 @@ header img {
     display: flex;
     justify-content: center;
     gap: 20px; /* Equal spacing between buttons */
+    flex-wrap: wrap; /* Ensures responsiveness */
 }
 
 /* Button Styling */
@@ -99,4 +101,21 @@ header img {
 #cv {
     margin: 40px auto;
     max-width: 600px;
+    padding: 20px;
+}
+
+/* Responsive Fixes */
+@media screen and (max-width: 768px) {
+    .overlay {
+        padding: 10px;
+    }
+
+    .quote {
+        font-size: 18px;
+        width: 90%;
+    }
+
+    .social-links {
+        flex-direction: column; /* Stack buttons on smaller screens */
+    }
 }
