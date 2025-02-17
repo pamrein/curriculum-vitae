@@ -14,7 +14,7 @@ body {
 /* Header */
 header {
     position: relative;
-    max-height: 80%; /* Takes 80% of the viewport width */
+    max-height: 250px; /* Takes 80% of the viewport width */
     margin: auto;
     overflow: hidden;
 }
