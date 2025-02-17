@@ -10,7 +10,7 @@ body {
 /* Header */
 header {
     position: relative;
-    width: 80%; /* Takes 80% of the full width */
+    width: 100%; 
     margin: auto;
 }
 
