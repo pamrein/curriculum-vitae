@@ -111,11 +111,14 @@ header img {
     height: auto;
 }
 
+
 /* CV Section */
 #cv {
     margin: 20px auto;
     max-width: 600px;
-    padding: 20px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    /*padding: 20px;*/
 }
-
 
